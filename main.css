@@ -1,3 +1,20 @@
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+  :root {
+    --font-family: 'Montserrat', 'Merriweather', 'Poppins',  'Open Sans', 'Playfair Display';
+    --headerfont: 'Poppins',  'Open Sans','Roboto';
+  }
 * {
     padding: 0;
     margin-top: 0;
@@ -7,7 +24,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+h1, h2, h3 {
+    font-family: var(--headerfont);
+}
 body {
 display: grid;
 grid-template-columns: 1fr;
@@ -22,7 +41,7 @@ grid-template-areas:
  font-size: 4vw;
  background: linear-gradient(to right, #6b11cbb0,#6a11cb, #2574fcbb, #2575fc);
  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-family), Verdana, Geneva, Tahoma, sans-serif;
 }
 img {
     margin: 0 auto;
@@ -226,11 +245,9 @@ transform: translateY(-5px);
     padding: 10px;
 }
 p {
-    color: #333;
-}
-p:hover {
     color: black;
 }
+
 /*My Portfolio Gallery Grid styles END HERE*/
 
 /* Footer style */
