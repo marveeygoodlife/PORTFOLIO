@@ -38,7 +38,7 @@ const scrollToTop = function() {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #007bff;
+      background-color: dodgerblue;
       color: white;
       border: none;
       border-radius: 50%;
