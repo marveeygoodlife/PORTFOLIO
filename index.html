@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="main.css" type="text/css">
     <title>Marvellous Ediagbonya | Website Developer</title>
 </head>
-<body>
+<body id="top">
 <!-- Header style -->
 <header id="mainHeader">
 <!-- Logo here-->
@@ -26,27 +26,29 @@
             <a href="#"><img src="assets/favicon_io/apple-touch-icon.png" width="35" alt="My Logo" height="35">             
             </a>
         </div>
-<!-- Navigation Overlay here -->
-        <nav>
-<!-- Open Nav overlay  -->
-            <a href="#" id="openNav" title="Open Menu">☰</a>
-        <div id="mainnav">
-<!-- Close button -->
-            <a href="#" class="hidden" id="closeNav" title="Close Menu">✖</a> 
+        <div>        <a href="#mainnav" class="accessaid" id="openNav" title="Open Menu"></a>
+        </div>
+        <nav id="mainnav">
+            <!-- Open Nav overlay  -->
+            <!-- Close button -->
+            <!--             <a href="#" class="hidden" id="closeNav" title="Close Menu">✖</a> 
+             -->        
+            <!-- nav links -->
+                        <ul id="navigation">
+                        <li><a href="#top" >Home</a></li>
+                        <li><a href="#mySkill">Skills</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#myProject">Project</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="#top" title="top" class="closenav"></a></li>
+                        </ul>    
+                    </nav>
         
-<!-- nav links -->
-            <ul id="navigation">
-            <li><a href="#" >Home</a></li>
-            <li><a href="#mySkill">Skills</a></li>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#myProject">Project</a></li>
-            <li><a href="#footer">Contact</a></li>
-            </ul> 
-        </div>          
-        </nav>
 </header>
 <!-- Main style Start-->
 <main>
+    <!-- Navigation Overlay here -->
+
        <div id="container">
 <!-- Hero section -->
      <section class="hero" id="hero">
@@ -207,10 +209,11 @@
 <!-- Footer Navigation -->
          <div class="footer-links">
     <div class="footernv">
+
         <a href="#aboutMe">About</a>
         <a href="#mySkill">Skills</a>
         <a href="#myProject">Project</a>
-        <a href="#footer">Contact</a>
+        <a href="#top">Home</a>
     </div>
 
 
@@ -239,7 +242,7 @@
 <!-- License -->
           <div>
             <p  class="license">
-                &copy; 2025. <br> Website Development and Design by <a href="author.html" class="marveey">MARVEEY Goodlife</a>
+                &copy; 2025. <br> Website Development and Design by <a href="author.html" class="marveey" target="_blank">MARVEEY Goodlife</a>
             </p>
           </div>
 </footer>
