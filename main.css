@@ -133,7 +133,6 @@ nav ul li a {
     font-weight: 500;
     padding: 0 0 0 15px;
   }
-
 #closeNav {
     text-align: right;
      font-size: 30px;
@@ -212,10 +211,14 @@ transform: translateY(-5px);
     display: table;
     clear: both;
 }
-.content {
-    background-color: #8c4040;
-    padding: 0 0 3px 5px;
+.contentment {
+    margin: 0;
+    text-align: center;
+    padding: 8px;
 }
+.content {
+     background-color: #8c4040;
+ }
 .view {
     font-weight: 500;
 }
@@ -252,7 +255,8 @@ footer {
     font-size: .6em;
     color: white;
  }
-a { color: white;
+a { 
+    color: white;
     text-decoration: none;
 }
 a:hover {
@@ -338,9 +342,6 @@ nav ul {
     display: none;
 }
 div.footernv {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
 gap: 30px;
 }
 .socialM {
