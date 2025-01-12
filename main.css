@@ -20,7 +20,11 @@ grid-template-areas:
  margin: 0;
  line-height: 1.6;
  font-size: 4vw;
- background: linear-gradient(to right, #6b11cbb0,#6a11cb, #2574fcbb, #2575fc);
+/*  background: linear-gradient(5deg, #6b11cbb0,#6a11cb, #2574fcbb,#6a11cb, #2575fc, #6a11cb, #6a11cb);
+
+ */ 
+ background: linear-gradient(180deg,  rgb(50, 56, 50), rgb(0, 0, 0), rgb(45, 44, 44), rgb(50, 56, 50));
+
  color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -36,8 +40,7 @@ header {
     position: sticky;
     top: 0;
     color: #fff;
-    background-color: #333;
-    padding: 20px;
+     padding: 20px;
     grid-area: header;
     width: 100%;
     display: flex;
@@ -46,6 +49,11 @@ header {
     grid-template-columns: 50px minmax(250px 1fr);
     grid-template-rows: auto; */
   }
+  header, footer {
+    background-color: #0b0a0a;
+
+  }
+
 .hidden {position: relative;
     display: none  ;
     font-size: 30px;
@@ -80,7 +88,7 @@ header {
     color: white;
 }
 #openNav:hover {
-    color: rebeccapurple;
+    color: whitesmoke;
 }
 nav { /* border: 1px solid red; */
     grid-column: 2/3;
@@ -90,7 +98,7 @@ nav { /* border: 1px solid red; */
   }
  #mainnav {
     margin: 0;
-    top: 52px;
+    top: 77px;
     left: 0;
     overflow-x: hidden;
     transition: 0.3s;
@@ -164,13 +172,18 @@ main {
     transition: margin-left .5s;
     padding: 20px;
  }
-
+section {
+    margin: 1rem 0;
+}
 /* Hero section style End */
 /* Skills section style */
 #mySkills {
     padding: 5px;
     color: black;
     background-color: #f9f9f9;
+}
+.mySkill p {
+    color: black;
 }
 
 #mySkillsGrid {
@@ -225,18 +238,15 @@ transform: translateY(-5px);
     background-color: #ffffff;
     padding: 10px;
 }
-p {
-    color: #333;
-}
-p:hover {
-    color: black;
+.content p {
+    color: black  ;
 }
 /*My Portfolio Gallery Grid styles END HERE*/
 
 /* Footer style */
 footer {
+    margin-top: 1rem;
     grid-area: footer;
-    background-color: #333;
     text-align: center;
     bottom: 0;
     padding: 3rem;

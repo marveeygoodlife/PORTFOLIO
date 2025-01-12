@@ -18,7 +18,7 @@ const scrollToTop = function() {
     // Show/hide scroll button based on scroll position
     const ShowScrollButton = function () {
       //Added a console.log to see if the function is getting triggered
-      //console.log("ShowScrollButton triggered");
+      console.log("ShowScrollButton triggered");
       if (window.scrollY > window.innerHeight) {
         scrollButton.classList.add('show');
       } else {
@@ -41,7 +41,7 @@ const scrollToTop = function() {
       background-color: #007bff;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 50%;
       padding: 10px 15px;
       cursor: pointer;
       z-index: 1000; /* Ensure it's on top */
@@ -70,11 +70,11 @@ const scrollToTop = function() {
     opennavMenu.classList.add('hidden');
     closenavMenu.classList.remove('hidden');
     closenavMenu.style.color = "white";
-    navigation.style.backgroundColor = '#333';
-     navigation.style.width = '200px';
+    navigation.style.backgroundColor = '#333333';
+      navigation.style.width = '200px';
      mainContainer.marginLeft = '200px';
      closenavMenu.style.textDecoration = 'none';
-  };
+   };
 
   const closenav = ()=> {
     navbar.style.display = 'none';
