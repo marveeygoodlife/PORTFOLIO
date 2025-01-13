@@ -26,7 +26,7 @@ html {
 h1, h2, h3 {
     font-family: var(--headerfont);
 }
-body {
+body { z-index: 0;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto 1fr auto;
@@ -39,7 +39,7 @@ grid-template-areas:
  line-height: 1.6;
  background: linear-gradient(180deg,  rgb(50, 56, 50), rgb(0, 0, 0),  rgb(50, 56, 50));
  color: white;
- font: 200 20px / 1.5 var(--font-family), Verdana, Geneva, Tahoma, sans-serif;
+ font: 200 15px / 1.5 var(--font-family), Verdana, Geneva, Tahoma, sans-serif;
 }
 img { 
     padding: 0;
@@ -49,17 +49,19 @@ img {
     display: block;
 }
 /* Navigation style start */
-header {
-    z-index:1 ;
+header { 
+     z-index:1000 ;
     position: sticky;
     top: 0;
-    color: #fff;
     padding: 20px;
+    color: #fff;
     grid-area: header;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
-  }
+    flex-direction: row;
+    align-items: center;
+   }
 header, footer {
     background-color: #0b0a0a;
 
@@ -79,20 +81,31 @@ header, footer {
     color:snow;
     text-decoration: none;
 }
-#logo { 
-     margin: 2px 0 0 3px;
+#logo { max-width: 20px;
     padding: 0;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    margin-right: 8px;
 }
+/* OPEN AND CLOSE ICON */
+.accessaid {
+    background: black 10px 10px / 50px 50px no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 40px;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+ }
 #openNav {
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-     width: 50px;
-    height: 50px;
-    margin: 5px 100px 10px 0;
+    background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+    background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+     cursor: pointer;
+     color: white;
     text-decoration: none;
+}
+.closenav {
+    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
 }
 #openNav:visited {
     color: white;
@@ -100,40 +113,47 @@ header, footer {
 #openNav:hover {
     color: whitesmoke;
 }
-nav { 
-    grid-column: 2/3;
-    grid-row: -2;
-    margin: 0;
-    padding: 0;
-  }
+nav {
+    background-color: #8c4040;
+
+}
 #mainnav {
-    margin: 0;
-    top: 77px;
-    left: 0;
-    overflow-x: hidden;
+     display: none;
+     position: absolute;
+     left: 0;
+     top: 0;
     transition: 0.3s;
-    width: 0;
-    position: fixed;
-    height: 100%;
-    z-index: 100;
-    padding:px ;
- }
+   }
+   #mainnav:target {
+    display: block;
+   }
+
 nav ul {
 list-style-type: none;
 padding: 0;
 margin: 0;
-display: none;
+background-color: #0b0a0a;
+position: absolute;
+top: 49px;
+width: 100vw;
+left: 0;
+  z-index: 101;
+  opacity: .9;
 flex-direction: column;
 }
+
 nav ul li { 
+    opacity: 1;
     margin: 5px 0;
     text-align: center;
 }
 nav ul li a { 
+    opacity: 1;
+
     font-weight: 500;
     padding: 0 0 0 15px;
   }
-#closeNav {
+#closeNav { color: white;
     text-align: right;
      font-size: 30px;
  margin: 0px 20px 0 15px;}
@@ -255,7 +275,7 @@ footer {
     font-size: .6em;
     color: white;
  }
-a { 
+a {  width: fit-content;
     color: white;
     text-decoration: none;
 }
@@ -309,13 +329,30 @@ div.picture {
     margin-left: 0;
     max-width: 50%;
  }
-
+ #mainnav {
+    display: unset;
+    position: unset;
+    left: unset;
+    top: unset;
+   transition: 0.3s;
+  }
+  .closenav {
+    display: none;
+  }
+  #mainnav:target {
+   display: unset;
+  }
+  .accesstop {
+    display: none;
+  }
 nav ul {
-    display: flex;
+    top: unset;
+     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    z-index: unset;
 
 }
 #openNav {

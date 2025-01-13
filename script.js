@@ -38,7 +38,7 @@ const scrollToTop = function() {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: dodgerblue;
+      background-color: blueviolet;
       color: white;
       border: none;
       border-radius: 50%;
@@ -56,8 +56,8 @@ const scrollToTop = function() {
   document.head.appendChild(style);
 
 
-
-  /* FUNCTIONS TO SHOW NAV OVERLAY */
+/* 
+  /* FUNCTIONS TO SHOW NAV OVERLAY 
   const opennavMenu = document.getElementById('openNav');
   const closenavMenu = document.getElementById('closeNav');
   const navbar = document.getElementById("navigation");
@@ -70,6 +70,7 @@ const scrollToTop = function() {
     opennavMenu.classList.add('hidden');
     closenavMenu.classList.remove('hidden');
     closenavMenu.style.color = "white";
+    opennavMenu.style.color = "white;"
     navigation.style.backgroundColor = '#333333';
       navigation.style.width = '200px';
      mainContainer.marginLeft = '200px';
@@ -90,3 +91,4 @@ opennavMenu.addEventListener('click', opennav);
 closenavMenu.addEventListener('click', closenav);
 
 
+ */
