@@ -87,15 +87,23 @@ header, footer {
 }
 /* OPEN AND CLOSE ICON */
 .accessaid {
-    background:white;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    width: 40px;
-    height: 0;
-    padding-top: 40px;
-    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 2rem;
+ }
+.accessaid:hover {
+    color: white;
+    text-decoration: none;
+
+ }
+.accessaid:visited {
+    text-decoration: none;
+    color: white;
  }
   
 #openNav {
@@ -104,10 +112,6 @@ header, footer {
     text-decoration: none;
 }
  
-.closenav {
-    margin: 0px 20px 0 15px;
-     color: white;
-}
 #openNav:visited {
     color: white;
 }
@@ -144,12 +148,12 @@ left: 0;
   z-index: 101;
   opacity: .9;
 flex-direction: column;
-}
+ }
 
 nav ul li { 
     opacity: 1;
     margin: 5px 0;
-    text-align: center;
+    text-align: left;
 }
 nav ul li a { 
     opacity: 1;
@@ -383,9 +387,9 @@ div.picture {
     top: unset;
    transition: 0.3s;
   }
-  .closenav {
+ .accessaid {
     display: none;
-  }
+ }
   #mainnav:target {
    display: unset;
   }
