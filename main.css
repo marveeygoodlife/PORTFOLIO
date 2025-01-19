@@ -48,9 +48,9 @@ img {
     height: auto;
     display: block;
 }
-/* Navigation style start */
+/*Header and  Navigation style start */
 header { 
-     z-index:1000 ;
+    z-index:1000 ;
     position: sticky;
     top: 0;
     padding: 20px;
@@ -97,6 +97,7 @@ header, footer {
     padding-top: 40px;
     overflow: hidden;
  }
+  
 #openNav {
     background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
     background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
@@ -104,8 +105,10 @@ header, footer {
      color: white;
     text-decoration: none;
 }
+ 
 .closenav {
-    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+    margin: 0px 20px 0 15px;
+     background-image: linear-gradient(45deg, transparent 13px, #ffffff 13px, #0b0a0a 15px, transparent ), linear-gradient(-45deg, #0b0a0a 13px, #ffffff 13px, #0b0a0a 15px, #333);
 }
 #openNav:visited {
     color: white;
@@ -134,7 +137,6 @@ padding: 0;
 margin: 0;
 background-color: #0b0a0a;
 position: absolute;
-top: 49px;
 width: 100vw;
 left: 0;
   z-index: 101;
@@ -153,10 +155,7 @@ nav ul li a {
     font-weight: 500;
     padding: 0 0 0 15px;
   }
-#closeNav { color: white;
-    text-align: right;
-     font-size: 30px;
- margin: 0px 20px 0 15px;}
+
 /* Navigation style end */
 
 /* Hero section style */
@@ -174,6 +173,9 @@ h1 {
     margin: 1rem 0;
     padding: 0;
  }
+ p {
+    text-align: center;
+ }
 main {
     padding: 5px;
     grid-area: main;
@@ -185,6 +187,20 @@ main {
 section {
     margin: 1rem 0;
 }
+.download {
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.download:hover {
+    border-radius: 20px;
+    background-color: blueviolet;
+ }
 /* Hero section style End */
 /* Skills section style */
 #mySkills {
@@ -239,6 +255,9 @@ transform: translateY(-5px);
 .content {
      background-color: #8c4040;
  }
+ .lone {
+    display: flex;
+ }
 .view {
     font-weight: 500;
 }
@@ -271,6 +290,27 @@ footer {
     margin: 1rem 0;
     text-align: left;
 }
+div.border {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding:   .3em;
+opacity: 0.5;}
+div.border a:hover {
+    color: white;
+ }
+
+div.border:hover {
+ opacity: 1;}
+.socialM {
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+ }
 .license { 
     font-size: .6em;
     color: white;
@@ -328,6 +368,11 @@ div.picture {
     padding: 0;
     margin-left: 0;
     max-width: 50%;
+ }
+ header {
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
  }
  #mainnav {
     display: unset;
@@ -387,6 +432,8 @@ gap: 30px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+     height: unset;
+    width: unset;
 }
 }
 
